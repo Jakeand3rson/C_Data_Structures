@@ -12,7 +12,7 @@ gcc <filename>.c // this compiles the code to the default filename a.out
 ```
 OR 
 ```
-gcc <appname>.c -o <appname>.app // This compiles to a designated file.
+gcc <filename>.c -o <filename>.app // This compiles to a designated file.
 ./myApplication.app //This will run the program
 ```
 
