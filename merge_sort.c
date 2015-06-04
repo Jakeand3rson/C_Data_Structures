@@ -7,3 +7,6 @@ void merge(int *arr, int left_start, int right_start, int right_end) {
 
 }
 
+void sort(int *arr, int start, int end){
+
+}
