@@ -7,8 +7,8 @@ My goal in this is to begin learning the C programming language. To do this, I w
 
 ## Compiling and running C code
 ``` 
-gcc < filename >.c
-./a.out
+gcc <filename>.c // this compiles the code
+./a.out // This will run the program
 ```
 
 ### Sorting Algorithms branch
