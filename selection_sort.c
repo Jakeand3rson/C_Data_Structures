@@ -20,7 +20,7 @@ void select_sort (int *arr, int n) {
     }
 }
 int main() {
-    int a[8] = {,7,6,5,4,3,2,1};
+    int a[8] = {11,7,3,19,4,99,2,1};
     printf("the unsorted array is: \n");
     int i = 0;
     for(i = 0;i<8;i++){
