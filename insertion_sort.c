@@ -18,7 +18,7 @@ void insert_sort(int *arr, int total_n) {
     }
 
     int main(){
-        int a[8] = {8,7,6,5,4,3,2,1};
+        int a[8] = {83,72,555,23,12,9,1000};
         printf("the unsorted array is: \n");
         int i = 0;
         for(i = 0;i<8;i++){
