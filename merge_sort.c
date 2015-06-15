@@ -44,4 +44,14 @@ void sort(int *arr, int start, int end){
     int l_start = start;
     int r_start = (total % 2 == 0) ? (start + end) / 2 : (start + end + 1) / 2;
     int r_end = end;
+
+    // Check size of array. If its one... easy peasy 
+    if (total < 2)
+        return;
+
+    // if its just two items.. Just call merge()
+    if (total == 2)
+        merge(arr, l_start, r_start, r_end);
+
+    
 }
