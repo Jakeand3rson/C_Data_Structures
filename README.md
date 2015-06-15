@@ -19,3 +19,4 @@ gcc <appname>.c -o <appname>.app // This compiles to a designated file.
 ### Sorting Algorithms branch
 This branch includes algorithms from the above stated book
 1. Selection Sort
+2. Insertion Sort
