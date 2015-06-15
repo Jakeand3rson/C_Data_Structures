@@ -8,7 +8,7 @@ void insert_sort(int *arr, int total_n) {
     int i, j, current;
     for (i = 0; i < total_n; i++) {
         current = arr[i];
-        for (j = i - 1; j <= 0; j--) {
+        for (j = i - 1; j >= 0; j--) {
             if (arr[j] <= current) {
                 break;                }
                 arr[j+1] = arr[j];
