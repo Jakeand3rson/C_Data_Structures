@@ -38,6 +38,10 @@ void merge(int *arr, int l_start, int r_start, int r_end) {
 
 }
 
+//recursively sorting
 void sort(int *arr, int start, int end){
-
+    int total = end - start;
+    int l_start = start;
+    int r_start = (total % 2 == 0) ? (start + end) / 2 : (start + end + 1) / 2;
+    int r_end = end;
 }
