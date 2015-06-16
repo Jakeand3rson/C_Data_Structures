@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "quick_sort.h"
 
 
@@ -43,18 +45,16 @@ void quick_sort(int *arr, int left, int right) {
 
 int main()
 {
-    int arr[] = { 3, 5, 9, 10, 13, 100, 32, 41, 86, 1, 0, 12 };
-    int len, i;
-
-    len  = sizeof(arr) / sizeof(arr[0]);
-
-    quick_sort(arr, 0, len - 1);
-
-    for (i = 0; i < len; i++) {
-        printf("%d ", arr[i]);
-    }
-
+    int arr[12] = { 3, 5, 9, 10, 13, 100, 32, 41, 86, 1, 0, 12 };
+        printf("The unsorted array is: \n");
+    int i = 0;
+    for (i = 0; i < 12; i++)
+        printf("\t%d", arr[i]);
     printf("\n");
-
-    return 0;
+    quick_sort(arr, 0, 12);
+    printf("the sorted array is: \n");
+    for(i = 0; i < 12; i++){
+        printf("\t%d", arr[i]);
+    }
+    printf("\n");
 }
