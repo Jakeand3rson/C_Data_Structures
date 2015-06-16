@@ -27,7 +27,7 @@ void merge (int *arr, int l_start, int r_start, int r_end) {
         temp[k++] = arr[i++];
     }
 
-    while (i < r_end) {
+    while (j < r_end) {
         temp[k++] = arr[j++];
     }
 
