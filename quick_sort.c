@@ -43,5 +43,18 @@ void quick_sort(int *arr, int left, int right) {
 
 int main()
 {
+    int arr[] = { 3, 5, 9, 10, 13, 100, 32, 41, 86, 1, 0, 12 };
+    int len, i;
+
+    len  = sizeof(arr) / sizeof(arr[0]);
+
+    quick_sort(arr, 0, len - 1);
+
+    for (i = 0; i < len; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    printf("\n");
+
     return 0;
 }
