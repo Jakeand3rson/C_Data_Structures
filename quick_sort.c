@@ -1,16 +1,6 @@
 #include "quick_sort.h"
 
-void quick_sort(int *arr, int left, int right) {
-    int pivot;
 
-    if (left <= right) {
-        pivot = partition(arr, left, right);
-
-        quick_sort(arr, left, pivot -1);
-        quick_sort(arr, pivot +1, right);
-    }
-    return;
-}
 
 static int partition( int *arr, int left, int right) {
     int pivot = left;
@@ -37,4 +27,16 @@ static int partition( int *arr, int left, int right) {
     arr[high] = temp;
 
     return high;
+}
+
+void quick_sort(int *arr, int left, int right) {
+    int pivot;
+
+    if (left <= right) {
+        pivot = partition(arr, left, right);
+
+        quick_sort(arr, left, pivot -1);
+        quick_sort(arr, pivot +1, right);
+    }
+    return;
 }
