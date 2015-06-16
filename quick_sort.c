@@ -1,6 +1,6 @@
 #include "quick.h"
 
-static int quick_sort(int *arr, int left, int right) {
+void quick_sort(int *arr, int left, int right) {
     int pivot;
 
     if (left <= right) {
