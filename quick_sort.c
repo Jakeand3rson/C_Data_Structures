@@ -22,5 +22,9 @@ static int partition(*arr, int left, int right) {
         while (arr[pivot] >= arr[low]) {
             low++;
         }
+        while (arr[pivot] <= arr[high]) {
+            high--;
+        }
+        
     }
 }
