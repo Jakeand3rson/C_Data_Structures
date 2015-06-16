@@ -20,7 +20,7 @@ static int partition( int *arr, int left, int right) {
         if (low <= high) {
             temp = arr[high];
             arr[high] = arr[low];
-            arr[low] = arr[temp];
+            arr[low] = temp;
         }
     }
 
