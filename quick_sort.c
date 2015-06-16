@@ -31,4 +31,10 @@ static int partition(*arr, int left, int right) {
             arr[low] = arr[temp];
         }
     }
+
+    temp = arr[pivot];
+    arr[pivot] = arr[high];
+    arr[high] = temp;
+
+    return high
 }
