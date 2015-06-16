@@ -11,3 +11,12 @@ static int quick_sort(int *arr, int left, int right) {
     }
     return
 }
+
+static int partition(*arr, int left, int right) {
+    int pivot = left;
+    int high = right;
+    int low = left + 1;
+    int temp;
+
+
+}
