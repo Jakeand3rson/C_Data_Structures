@@ -34,10 +34,11 @@ static int partition( int *arr, int left, int right) {
 void quick_sort(int *arr, int left, int right) {
     int pivot;
 
+    // divide and conquer
     if (left <= right) {
         pivot = partition(arr, left, right);
 
-        quick_sort(arr, left, pivot -1);
+        quick_sort(arr, left, pivot - 1);
         quick_sort(arr, pivot +1, right);
     }
     return;
@@ -45,7 +46,7 @@ void quick_sort(int *arr, int left, int right) {
 
 int main()
 {
-    int arr[12] = { 3, 5, 9, 10, 13, 100, 32, 41, 86, 1, 0, 12 };
+    int arr[12] = { 3, 5, 9, 10, 13, 100, 32, 41, 86, 1, 0, 2 };
         printf("The unsorted array is: \n");
     int i = 0;
     for (i = 0; i < 12; i++)
