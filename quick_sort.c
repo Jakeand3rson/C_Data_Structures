@@ -72,15 +72,16 @@ void quick_sort(int *arr, int n) {
 
 int main()
 {
-    int arr[12] = { 3, 5, 9, 10, 13, 100, 32, 41, 86, 1, 0, 2 };
+    int arr[] = { 3, 5, 9, 10, 13, 100, 32, 41, -86, 1, 0, 2 };
         printf("The unsorted array is: \n");
+    int n = sizeof arr / sizeof arr[0];
     int i = 0;
-    for (i = 0; i < 12; i++)
+    for (i = 0; i < n; i++)
         printf("\t%d", arr[i]);
     printf("\n");
-    quick_sort(arr, 12);
+    quick_sort(arr, n);
     printf("the sorted array is: \n");
-    for(i = 0; i < 12; i++){
+    for(i = 0; i < n; i++){
         printf("\t%d", arr[i]);
     }
     printf("\n");
