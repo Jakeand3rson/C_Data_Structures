@@ -12,7 +12,7 @@ void quick_sort(int *arr, int n) {
     // pivot is the middle of the array.
     pivot = arr[n / 2];
 
-    for (left = 0, right = n - 1; left++, right--){
+    for (left = 0, right = n - 1;; left++, right--){
         while (arr[left] < pivot)
             left++;
         while (pivot < arr[right])
@@ -23,6 +23,8 @@ void quick_sort(int *arr, int n) {
         arr[left] = arr[right];
         arr[right] = temp;
     }
+    quick_sort(arr, left);
+    quick_sort(arr + left, n - right);
         
 
 }
