@@ -19,6 +19,9 @@ void quick_sort(int *arr, int n) {
             right--;
         if (left >= right)
             break;
+        temp = arr[left];
+        arr[left] = arr[right];
+        arr[right] = temp;
     }
         
 
