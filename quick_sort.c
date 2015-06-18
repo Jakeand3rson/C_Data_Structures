@@ -6,6 +6,9 @@
 void quick_sort(int *arr, int n) {
     int left, right, pivot, temp;
 
+    // if the array is just one number, return it. Aint nobody got time for that. 
+    if (n < 2)
+        return;
 }
 
 
