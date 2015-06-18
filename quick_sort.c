@@ -13,7 +13,12 @@ void quick_sort(int *arr, int n) {
     pivot = arr[n / 2];
 
     for (left = 0, right = n - 1; left++, right--){
-        
+        while (arr[left] < pivot)
+            left++;
+        while (pivot < arr[right])
+            right--;
+        if (left >= right)
+            break;
     }
         
 
