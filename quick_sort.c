@@ -78,7 +78,7 @@ int main()
     for (i = 0; i < 12; i++)
         printf("\t%d", arr[i]);
     printf("\n");
-    quick_sort(arr, 0, 12);
+    quick_sort(arr, 12);
     printf("the sorted array is: \n");
     for(i = 0; i < 12; i++){
         printf("\t%d", arr[i]);
