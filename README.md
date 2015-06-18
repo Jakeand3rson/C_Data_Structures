@@ -21,3 +21,4 @@ This branch includes algorithms from the above stated book
 1. Selection Sort
 2. Insertion Sort
 3. Merge Sort
+4. Quick Sort
