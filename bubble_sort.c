@@ -20,11 +20,11 @@ int main() {
     int n = sizeof a / sizeof a[0];
     int i;
     for (i = 0; i < n; i++) {
-        printf("The numbers pre sort %d%s", a[i], i == n - 1 ?, "\n" : " ");
+        printf("The numbers pre sort %d%s", a[i], i == n - 1 ? "\n" : " ");
     }
     bubble_sort(a, n);
     for (i = 0; i < n; i++) {
-        printf("The numbers post sort %d%s", a[i], i == n - 1 ?, "\n" : " ");
+        printf("The numbers post sort %d%s", a[i], i == n - 1 ? "\n" : " ");
     }
     return 0;
 
