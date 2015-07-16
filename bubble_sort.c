@@ -19,12 +19,14 @@ int main() {
     int a[] = {4, 65, 76, 34, 453, 23, 65, 76, 87, 67, 433};
     int n = sizeof a / sizeof a[0];
     int i;
+    printf("The pre-sorted numbers are...\n");
     for (i = 0; i < n; i++) {
-        printf("The numbers pre sort %d%s", a[i], i == n - 1 ? "\n" : " ");
+        printf("%d%s", a[i], i == n - 1 ? "\n" : " ");
     }
     bubble_sort(a, n);
+    printf("The post-sorted numbers are...\n");
     for (i = 0; i < n; i++) {
-        printf("The numbers post sort %d%s", a[i], i == n - 1 ? "\n" : " ");
+        printf("%d%s", a[i], i == n - 1 ? "\n" : " ");
     }
     return 0;
 
