@@ -19,4 +19,7 @@ int main() {
     int a[] = {4, 65, 76, 34, 453, 23, 65, 76, 87, 67, 433};
     int n = sizeof a / sizeof a[0];
     int i;
+    for (i = 0; i < n; i++) {
+        printf("%d%s", a[i], i == n - 1 ?, "\n" : " ");
+    }
 }
