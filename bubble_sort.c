@@ -14,3 +14,7 @@ void bubble_sort (int *a, int n) {
         }
     }
 }
+
+int main() {
+    int a[] = {4, 65, 76, 34, 453, 23, 65, 76, 87, 67, 433};
+}
